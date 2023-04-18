@@ -1,0 +1,11 @@
+*.ace binary
+*.cvf text
+*.con text working-tree-encoding=UTF-16LE-BOM eol=CRLF
+*.dat text
+*.eng text working-tree-encoding=UTF-16LE-BOM eol=CRLF
+*.s binary
+*.sd text
+*.sms text
+*.tga binary
+*.wag text working-tree-encoding=UTF-16LE-BOM eol=CRLF
+*.wav binary
