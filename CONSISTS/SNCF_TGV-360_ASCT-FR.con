@@ -1,0 +1,59 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "SNCF_TGV-360_ASCT-FR"
+		Serial ( 1 )
+		MaxVelocity ( 88.88889 0.54775 )
+		NextWagonUID ( 12 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 24119 )
+			EngineData ( Atl-M1-24119_FR SNCF_TGV-A-360 )
+		)
+		Wagon (
+			WagonData ( TGVR241360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 241360 )
+		)
+		Wagon (
+			WagonData ( TGVR242360-Carmillon_ASCT SNCF_TGV-A-360 )
+			UiD ( 242360 )
+		)
+		Wagon (
+			WagonData ( TGVR243360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 243360 )
+		)
+		Engine (
+			UiD ( 244360 )
+			EngineData ( TGVR244360-Carmillon SNCF_TGV-A-360 )
+		)
+		Wagon (
+			WagonData ( TGVR245360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 245360 )
+		)
+		Wagon (
+			WagonData ( TGVR246360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 246360 )
+		)
+		Wagon (
+			WagonData ( TGVR247360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 247360 )
+		)
+		Wagon (
+			WagonData ( TGVR248360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 248360 )
+		)
+		Wagon (
+			WagonData ( TGVR249360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 249360 )
+		)
+		Wagon (
+			WagonData ( TGVR240360-Carmillon SNCF_TGV-A-360 )
+			UiD ( 240360 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24120 )
+			EngineData ( atl-M2-24120_FR SNCF_TGV-A-360 )
+		)
+	)
+)

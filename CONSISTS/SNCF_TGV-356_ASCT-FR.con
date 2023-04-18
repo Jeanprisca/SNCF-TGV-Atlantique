@@ -1,0 +1,59 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "SNCF_TGV-356_ASCT-FR"
+		Serial ( 1 )
+		MaxVelocity ( 88.88889 0.54775 )
+		NextWagonUID ( 12 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 24111 )
+			EngineData ( Atl-M1-24111_FR SNCF_TGV-A-356 )
+		)
+		Wagon (
+			WagonData ( TGVR241356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 241356 )
+		)
+		Wagon (
+			WagonData ( TGVR242356-Carmillon_ASCT SNCF_TGV-A-356 )
+			UiD ( 242356 )
+		)
+		Wagon (
+			WagonData ( TGVR243356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 243356 )
+		)
+		Engine (
+			UiD ( 244356 )
+			EngineData ( TGVR244356-Carmillon SNCF_TGV-A-356 )
+		)
+		Wagon (
+			WagonData ( TGVR245356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 245356 )
+		)
+		Wagon (
+			WagonData ( TGVR246356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 246356 )
+		)
+		Wagon (
+			WagonData ( TGVR247356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 247356 )
+		)
+		Wagon (
+			WagonData ( TGVR248356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 248356 )
+		)
+		Wagon (
+			WagonData ( TGVR249356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 249356 )
+		)
+		Wagon (
+			WagonData ( TGVR240356-Carmillon SNCF_TGV-A-356 )
+			UiD ( 240356 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24112 )
+			EngineData ( atl-M2-24112_FR SNCF_TGV-A-356 )
+		)
+	)
+)

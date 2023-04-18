@@ -1,0 +1,108 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "SNCF_TGV-343+340_UM-Sharpes"
+		Serial ( 1 )
+		MaxVelocity ( 100.00000 0.38198 )
+		NextWagonUID ( 0 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 24085 )
+			EngineData ( Atl-M1-24085_FR-Sharpes SNCF_TGV-a-343 )
+		)
+		Wagon (
+			WagonData ( TGVR241343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 241343 )
+		)
+		Wagon (
+			WagonData ( TGVR242343-Carmillon_ASCT SNCF_TGV-A-343 )
+			UiD ( 242343 )
+		)
+		Wagon (
+			WagonData ( TGVR243343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 243343 )
+		)
+		Wagon (
+			WagonData ( TGVR244343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 244343 )
+		)
+		Wagon (
+			WagonData ( TGVR245343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 245343 )
+		)
+		Wagon (
+			WagonData ( TGVR246343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 246343 )
+		)
+		Wagon (
+			WagonData ( TGVR247343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 247343 )
+		)
+		Wagon (
+			WagonData ( TGVR248343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 248343 )
+		)
+		Wagon (
+			WagonData ( TGVR249343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 249343 )
+		)
+		Wagon (
+			WagonData ( TGVR240343-Carmillon SNCF_TGV-A-343 )
+			UiD ( 240343 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24086 )
+			EngineData ( Atl-M2-24086-att_FR-Sharpes SNCF_TGV-a-343 )
+		)
+		Engine (
+			UiD ( 24079 )
+			EngineData ( Atl-M1-24079-att_FR-Sharpes SNCF_TGV-a-340 )
+		)
+		Wagon (
+			WagonData ( TGVR241340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 241340 )
+		)
+		Wagon (
+			WagonData ( TGVR242340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 242340 )
+		)
+		Wagon (
+			WagonData ( TGVR243340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 243340 )
+		)
+		Wagon (
+			WagonData ( TGVR244340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 244340 )
+		)
+		Wagon (
+			WagonData ( TGVR245340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 245340 )
+		)
+		Wagon (
+			WagonData ( TGVR246340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 246340 )
+		)
+		Wagon (
+			WagonData ( TGVR247340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 247340 )
+		)
+		Wagon (
+			WagonData ( TGVR248340-lacroix SNCF_TGV-a-340 )
+			UiD ( 248340 )
+		)
+		Wagon (
+			WagonData ( TGVR249340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 249340 )
+		)
+		Wagon (
+			WagonData ( TGVR240340-Lacroix SNCF_TGV-a-340 )
+			UiD ( 240340 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24080 )
+			EngineData ( atl-M2-24080_FR-Sharpes SNCF_TGV-a-340 )
+		)
+	)
+)

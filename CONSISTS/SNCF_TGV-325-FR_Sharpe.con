@@ -1,0 +1,60 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( SNCF_TGV-325-FR_Sharpe
+		Name ( "SNCF_TGV-325-FR_Sharpe" )
+		Serial ( 2 )
+		MaxVelocity ( 198.84 0.62257 )
+		NextWagonUID ( 12 )
+		Durability ( 0.02500 )
+		Engine (
+			UiD ( 24049 )
+			EngineData ( Atl-M1-24049_FR-Sharpes SNCF_TGV-a-325 )
+		)
+		Wagon (
+			WagonData ( TGVR241325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 241325 )
+		)
+		Wagon (
+			WagonData ( TGVR242325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 242325 )
+		)
+		Wagon (
+			WagonData ( TGVR243325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 243325 )
+		)
+		Wagon (
+			WagonData ( TGVR244325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 244325 )
+		)
+		Wagon (
+			WagonData ( TGVR245325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 245325 )
+		)
+		Wagon (
+			WagonData ( TGVR246325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 246325 )
+		)
+		Wagon (
+			WagonData ( TGVR247325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 247325 )
+		)
+		Wagon (
+			WagonData ( TGVR248325-lacroix SNCF_TGV-a-325 )
+			UiD ( 248325 )
+		)
+		Wagon (
+			WagonData ( TGVR249325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 249325 )
+		)
+		Wagon (
+			WagonData ( TGVR240325-Lacroix SNCF_TGV-a-325 )
+			UiD ( 240325 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24050 )
+			EngineData ( atl-M2-24050_FR-Sharpes SNCF_TGV-a-325 )
+		)
+	)
+)

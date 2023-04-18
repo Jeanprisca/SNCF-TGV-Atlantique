@@ -1,0 +1,128 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "SNCF_TGV-356+343-FR"
+		Serial ( 1 )
+		MaxVelocity ( 88.88889 0.54775 )
+		NextWagonUID ( 25 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 24112 )
+			EngineData ( atl-M2-24112_FR SNCF_TGV-A-356 )
+		)
+		Wagon (
+			WagonData ( TGVR240356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 240356 )
+		)
+		Wagon (
+			WagonData ( TGVR249356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 249356 )
+		)
+		Wagon (
+			WagonData ( TGVR248356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 248356 )
+		)
+		Wagon (
+			WagonData ( TGVR247356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 247356 )
+		)
+		Wagon (
+			WagonData ( TGVR246356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 246356 )
+		)
+		Wagon (
+			WagonData ( TGVR245356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 245356 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 244356 )
+			EngineData ( TGVR244356-Carmillon SNCF_TGV-A-356 )
+		)
+		Wagon (
+			WagonData ( TGVR243356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 243356 )
+		)
+		Wagon (
+			WagonData ( TGVR242356-Carmillon_ASCT SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 242356 )
+		)
+		Wagon (
+			WagonData ( TGVR241356-Carmillon SNCF_TGV-A-356 )
+			Flip ( )
+			UiD ( 241356 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24111 )
+			EngineData ( Atl-M1-24111-att_FR SNCF_TGV-A-356 )
+		)
+		Engine (
+			UiD ( 24086 )
+			EngineData ( atl-M2-24086-att_FR SNCF_TGV-A-343 )
+		)
+		Wagon (
+			WagonData ( TGVR240343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 240343 )
+		)
+		Wagon (
+			WagonData ( TGVR249343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 249343 )
+		)
+		Wagon (
+			WagonData ( TGVR248343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 248343 )
+		)
+		Wagon (
+			WagonData ( TGVR247343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 247343 )
+		)
+		Wagon (
+			WagonData ( TGVR246343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 246343 )
+		)
+		Wagon (
+			WagonData ( TGVR245343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 245343 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 244343 )
+			EngineData ( TGVR244343-Carmillon SNCF_TGV-A-343 )
+		)
+		Wagon (
+			WagonData ( TGVR243343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 243343 )
+		)
+		Wagon (
+			WagonData ( TGVR242343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 242343 )
+		)
+		Wagon (
+			WagonData ( TGVR241343-Carmillon SNCF_TGV-A-343 )
+			Flip ( )
+			UiD ( 241343 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24085 )
+			EngineData ( Atl-M1-24085_FR SNCF_TGV-A-343 )
+		)
+	)
+)

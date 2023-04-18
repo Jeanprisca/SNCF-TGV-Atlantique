@@ -1,0 +1,69 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Train (
+	TrainCfg ( "SNCF_TGV-324-FR"
+		Serial ( 1 )
+		MaxVelocity ( 88.88889 0.54775 )
+		NextWagonUID ( 12 )
+		Durability ( 1.00000 )
+		Engine (
+			UiD ( 24048 )
+			EngineData ( atl-M2-24048_FR SNCF_TGV-A-324 )
+		)
+		Wagon (
+			WagonData ( TGVR240324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 240324 )
+		)
+		Wagon (
+			WagonData ( TGVR249324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 249324 )
+		)
+		Wagon (
+			WagonData ( TGVR248324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 248324 )
+		)
+		Wagon (
+			WagonData ( TGVR247324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 247324 )
+		)
+		Wagon (
+			WagonData ( TGVR246324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 246324 )
+		)
+		Wagon (
+			WagonData ( TGVR245324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 245324 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 244324 )
+			EngineData ( TGVR244324-Lacroix SNCF_TGV-A-324 )
+		)
+		Wagon (
+			WagonData ( TGVR243324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 243324 )
+		)
+		Wagon (
+			WagonData ( TGVR242324-Lacroix_ASCT SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 242324 )
+		)
+		Wagon (
+			WagonData ( TGVR241324-Lacroix SNCF_TGV-A-324 )
+			Flip ( )
+			UiD ( 241324 )
+		)
+		Engine (
+			Flip ( )
+			UiD ( 24047 )
+			EngineData ( Atl-M1-24047_FR SNCF_TGV-A-324 )
+		)
+	)
+)
