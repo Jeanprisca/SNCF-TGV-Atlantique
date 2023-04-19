@@ -1,0 +1,34 @@
+
+include ( "..\\atl-M2-24050_FR.eng" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+		MSTSFreightAnimEnabled ( 1 )
+		WagonEmptyWeight( 68.0t )
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "TSK-Plaque-Mot-325-REC.s" )
+			Offset ( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSKT-LTRHFR.s" )
+			Offset( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "man1.s" )
+			Offset( -0.638, 1.62, -7.48 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "FSugeM.s" )
+			Offset( 0.1, 1.38, -7.2 )
+		)
+	)
+)

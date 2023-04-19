@@ -1,0 +1,28 @@
+
+include ( "..\\Atl-M1-24049_FR.eng" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+		MSTSFreightAnimEnabled ( 1 )
+		WagonEmptyWeight( 68.0t )
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "TSK-Plaque-Mot-325-REC.s" )
+			Offset ( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "TSKT-LTRHFR.s" )
+			Offset ( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "femme2.s" )
+			Offset ( 0.55, 0.6, -11 )
+		)
+	)
+)

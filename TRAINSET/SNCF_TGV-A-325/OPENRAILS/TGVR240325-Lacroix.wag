@@ -1,0 +1,22 @@
+
+include ( "..\\TGVR240325-Lacroix.wag" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 34.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_Blas-Vendome_325-R10.s" )
+			Offset( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_COSE-R10_ATL.s" )
+			Offset( 0, 0, 0 )
+		)
+	)
+)
