@@ -1,0 +1,187 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon (	Atl-M1-24047_FR
+
+    	comment(-------- Nom et formes --------)
+
+	Type 			( Engine )
+	WagonShape 		( Atl-M1-24047_FR.s )
+	Freightanim 		( Tsk_TGVMotQueue.s 1 1 )
+
+
+	comment(-------- Caracteristiques generales --------)
+
+	Include( Motrices\\EngineMechanicalCharacteristics.inc )
+
+
+	comment(-------- Organes choc et attelage --------)
+
+	Include( Motrices\\Buffers.inc )
+	Include( Motrices\\Couplings.inc )
+
+	comment(-------- Pneumatique et frein --------)
+	
+	Include( Motrices\\EngineBrakeSystem.inc )
+
+
+
+	comment(-------- Phares LED --------)
+
+	Include( Motrices\\script-Lights.inc )
+	
+	
+
+
+	comment(-------- Script pantographes--------)
+	
+        ORTSPantographs (
+                Pantograph (
+                        Delay ( 0s )
+                        )
+                Pantograph (
+                        Delay ( 999999s )
+                        )
+                Pantograph (
+                        Delay ( 0s )
+                        )
+                Pantograph (
+                        Delay ( 0s )
+                        )
+        )
+
+
+	comment(-------- Sons extérieurs --------)
+	
+	Sound (	"..\\..\\common.sound\\TGVA\\ATLeng-m1.sms" )
+
+
+	comment(-------- Cabine 3D --------)
+
+	ORTS3DCab(
+            ORTS3DCabFile ( Cab_TGVA-3D_V1-M1_TVM300.s )
+            ORTS3DCabHeadPos ( -0.49 2.79 7.35 )
+            RotationLimit ( 40 60 0 )
+            StartDirection ( 12 0 0 )
+ 	Sound ( "..\\..\\common.sound\\TGVA\\ATLcab.sms" )
+	)
+)
+	
+	
+Engine (	Atl-M1-24047_FR
+
+	comment(-------- Caracteristiques generales --------)
+
+    Name 							( "Motrice impaire TGV A 324" )
+	Wagon 							( Atl-M1-24047_FR )
+	Sound 							( "..\\..\\common.sound\\TGVA\\ATLcab.sms" )
+
+	CabView 						( "..\\..\\common.cab\\TGVA\\tgv_ATL-FR-M1.cvf" )
+	HeadOut 						( -1.55 3.0 6.8 )
+
+	Type 							( Electric )
+
+	MaxVelocity 					( 305kph )
+	MaxPower						( 3200kW )
+	MaxForce						( 110.0kN )
+	MaxContinuousForce				( 100.0kN )
+	MaxCurrent						( 1500A )
+
+	WheelRadius						( 0.46m )
+	Sanding							( 1e9mph )
+	NumWheels						( 4 )
+
+    MaxTemperature 						( 110 )
+    MaxOilPressure 						( 90 )
+	RunUpTimeToMaxForce 					( 30 )
+	DieselEngineSpeedOfMaxTractiveEffort 		( 30kmh )
+	
+	
+	comment(-------- Script batterie --------)
+
+  	ORTSBattery (
+    		Mode 						( PushButtons )
+    		Delay 						( 2s )
+    		DefaultOn 					( 0 )
+  		)
+	
+	
+	comment(-------- Script TCS --------)
+	
+	Include( Motrices\\TrainControlSystems.inc )
+
+
+	comment(-------- Script clé BL --------)
+
+	ORTSMasterKey (
+	Mode ( Manual )
+	HeadlightControl ( 1 )
+	DisabledIfCabPowerSupplyOff ( 1 )
+	)	
+	
+	
+
+	comment(-------- Pneumatique et frein --------)
+	
+	Include( Motrices\\BrakeSystem.inc )
+
+
+
+	comment(-------- IHM --------)
+
+	EmergencyStopMonitor (
+		MonitoringDeviceMonitorTimeLimit 		( 5 )
+		MonitoringDeviceAlarmTimeLimit 			( 2 )
+		MonitoringDevicePenaltyTimeLimit 		( 0 )
+		MonitoringDeviceCriticalLevel 			( 240 )
+		MonitoringDeviceResetLevel 			( 0 )
+		MonitoringDeviceAppliesFullBrake 		( 0 )
+		MonitoringDeviceAppliesEmergencyBrake 		( 1 )
+		MonitoringDeviceAppliesCutsPower 		( 1 )
+		MonitoringDeviceAppliesShutsDownEngine 		( 1 )
+		MonitoringDeviceResetOnZeroSpeed 		( 0 )
+		MonitoringDeviceResetOnResetButton 		( 1 )
+	)
+	VigilanceMonitor (
+		MonitoringDeviceMonitorTimeLimit 		( 60 )
+		MonitoringDeviceAlarmTimeLimit 			( 55 )
+		MonitoringDeviceCriticalLevel 			( 240 )
+		MonitoringDeviceResetLevel 			( 0 )
+		MonitoringDeviceAppliesFullBrake 		( 0 )
+		MonitoringDeviceAppliesEmergencyBrake 		( 1 )
+		MonitoringDeviceAppliesCutsPower 		( 1 )
+		MonitoringDeviceAppliesShutsDownEngine 		( 1 )
+		MonitoringDeviceResetOnZeroSpeed 		( 0 )
+		MonitoringDeviceResetOnResetButton 		( 1 )
+	)
+	OverspeedMonitor (
+		MonitoringDeviceAlarmTimeBeforeOverSpeed 	( 2 )
+		MonitoringDeviceTriggerOnTrackOverspeedMargin 	( 1 )
+		MonitoringDeviceTriggerOnTrackOverspeed 	( 1 ) 
+		MonitoringDeviceMonitorTimeLimit 		( 2 )
+		MonitoringDeviceAlarmTimeLimit 			( 5 )
+		MonitoringDevicePenaltyTimeLimit 		( 2 )
+		MonitoringDeviceCriticalLevel 			( 240 )
+		MonitoringDeviceResetLevel 			( 1 )
+		MonitoringDeviceAppliesFullBrake 		( 0 )
+		MonitoringDeviceAppliesEmergencyBrake 		( 1 )
+		MonitoringDeviceAppliesCutsPower 		( 1 )
+		MonitoringDeviceAppliesShutsDownEngine 		( 1 ) 
+		MonitoringDeviceResetOnZeroSpeed 		( 0 )
+		MonitoringDeviceResetOnResetButton 		( 1 )
+	)
+
+
+	comment(-------- Description --------)
+	
+	Include( Motrices\\Description.inc )
+
+
+	comment(-------- Procedures --------)
+	
+	Include( Motrices\\Procedures.inc )
+	
+    
+	comment(-------- Commandes --------)
+	
+	Include( Motrices\\Controllers.inc )
+)
