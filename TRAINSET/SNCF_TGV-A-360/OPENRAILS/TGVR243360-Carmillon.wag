@@ -1,0 +1,22 @@
+
+include ( "..\\TGVR243360-Carmillon.wag" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 30.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "Transkit_Toiture_Wifi.s" )
+			Offset( -0.09, 3.51, 8.36 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_COSE-R3_ATL.s" )
+			Offset( 0, 0, 0 )
+		)
+	)
+)

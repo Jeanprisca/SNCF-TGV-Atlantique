@@ -1,0 +1,16 @@
+
+include ( "..\\atl-M2-24120-att_FR.eng" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 68.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSKT-LTRHFR.s" )
+			Offset( 0, 0, 0 )
+		)
+	)
+)
