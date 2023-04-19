@@ -1,0 +1,16 @@
+
+include ( "..\\TGVR240343-Carmillon.wag" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 34.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_COSE-R10_ATL.s" )
+			Offset( 0, 0, 0 )
+		)
+	)
+)

@@ -1,0 +1,29 @@
+
+include ( "..\\TGVR242343-Carmillon_ASCT.wag" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 30.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_COSE-R2_ATL.s" )
+			Offset( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "Agent_sncf.s" )
+			Offset( -0.98, -0.02, -5.86 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "Agent_sncf.s" )
+			Offset( 0.98, -0.02, -7.36 )
+			Flip ( 1 )
+		)
+	)
+)

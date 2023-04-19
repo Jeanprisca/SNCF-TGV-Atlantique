@@ -1,0 +1,22 @@
+
+include ( "..\\Atl-M1-24085_FR-Sharpes.eng" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+		MSTSFreightAnimEnabled ( 1 )
+		WagonEmptyWeight( 68.0t )
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "TSKT-LTRHFR.s" )
+			Offset ( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType ( Default )
+			Shape ( "femme2.s" )
+			Offset ( 0.55, 0.6, -11 )
+		)
+	)
+)

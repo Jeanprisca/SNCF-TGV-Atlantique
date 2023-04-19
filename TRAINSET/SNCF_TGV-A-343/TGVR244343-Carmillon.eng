@@ -1,0 +1,120 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon (	TGVR244343-Carmillon
+
+    	comment(-------- Nom et formes --------)
+
+	Type 			( Engine )
+	WagonShape ( TGVR244343-Carmillon.s )
+	Freightanim 	( Tsk_TGVRemMilieu.s 1 1 )
+
+	comment(-------- Caracteristiques generales --------)
+
+	Include( Remorques\\WagonMechanicalCharacteristics_Rem-Int.inc )
+
+
+	Comment(-------- Capacité d'emport --------)
+	PassengerCapacity ( 10.0 )
+
+
+	comment(-------- Organes de choc et d'attelage --------)
+
+	Include( Remorques\\Couplings_Rem-Int.inc )
+	
+	Include( Remorques\\Buffers.inc )
+
+
+    comment(-------- Freinage --------)
+	
+	Include( Motrices\\EngineBrakeSystem.inc )
+	
+	Sound ( "..\\..\\common.sound\\TGVA\\TGVRwag.sms" )
+)
+
+Engine (	TGV2N_R4_inOui
+
+    Name ( "TGVR244343" )
+	Wagon ( TGV2N_R4_inOui )
+	Type ( Diesel )
+	MaxPower ( 3000kW )
+	MaxForce ( 84kN )
+	MaxContinuousForce ( 84kN )
+	MaxVelocity ( 320kmh )
+	MaxCurrent ( 1200A )
+	WheelRadius ( 0.46m )
+	Sanding ( 6mph )
+	NumWheels ( 4 )
+	MaxTemperature ( 120 )
+	MaxOilPressure ( 90 )
+
+	BrakesEngineBrakeType 					( "Air_twin_pipe" )
+	BrakesTrainBrakeType 					( "Air_twin_pipe" )
+		BrakesEngineControllers 				( "Independent, Train" )
+
+     	BrakeCutsPowerAtBrakeCylinderPressure 			( 70 )
+
+			comment(-------- Ligne chauffage train --------)
+
+	Include( Remorques\\chauffage-train.inc )
+
+
+	comment(-------- Compresseur principal --------)
+
+	AirBrakesAirCompressorPowerRating 			 ( 0 )
+	AirBrakesAirCompressorWattage 				 ( 0 )
+	AirBrakesAirUsedPerPoundsOfBrakePipePressure ( 0 )
+	AirBrakesCompressorRestartPressure 			 ( 0 )
+	AirBrakesHasLowPressureTest 				 ( 0 )
+	AirBrakesMainMaxAirPressure	 				 ( 0 )
+	AirBrakesMainMinResAirPressure 				 ( 0 )
+	AirBrakesMainResVolume 						 ( 0 )
+    AirBrakeMaxMainResPipePressure				 ( 0 )
+
+	comment(-------- Frein de locomotive --------)
+
+	EngineBrakesControllerMinPressureReduction 		( 4.5 )
+	EngineBrakesControllerMaxPressureReduction 		( 4.5 )
+	EngineBrakesControllerMaxApplicationRate 		( 25 )
+	EngineBrakesControllerMaxReleaseRate 			( 40 )
+	EngineBrakesControllerMaxQuickReleaseRate 		( 40 )
+	EngineBrakesControllerMinSystemPressure 		( 0 )
+	EngineBrakesControllerMaxSystemPressure 		( 73 )
+	EngineBrakesControllerMaxPressureDropInNormalApplication ( 73 )
+	EngineBrakesControllerFullServicePressureDrop 		( 51.4 )
+	EngineBrakesControllerDirectControlExponent 		( 1 )
+	EngineBrakesControllerHasProportionalBrake 		( 0 )
+
+	comment(-------- Frein de train --------)
+
+	TrainBrakesControllerMinPressureReduction 		( 4.5 )
+	TrainBrakesControllerMaxPressureReduction 		( 4.5 )
+	TrainBrakesControllerMaxApplicationRate 		( 5 )
+	TrainBrakesControllerMaxReleaseRate 			( 5 )
+	TrainBrakesControllerMaxQuickReleaseRate 		( 10 )
+	TrainBrakesControllerEmergencyApplicationRate 		( 10 )
+	TrainBrakesControllerMinSystemPressure 			( 0 )
+	TrainBrakesControllerMaxSystemPressure 			( 73 )
+	TrainBrakesControllerMaxPressureDropInNormalApplication ( 51.4 )
+	TrainBrakesControllerEmergencyBrakeTimePenalty 		( 0 )
+	TrainBrakesControllerFullServicePressureDrop 		( 29 )
+	TrainBrakesControllerDirectControlExponent 		( 1 )
+
+	MaxDieselLevel ( 10l )
+	DieselUsedPerHourAtMaxPower ( 0.1l )
+	DieselUsedPerHourAtIdle ( 0.1l )
+
+	DieselEngineIdleRPM ( 1229 )
+	DieselEngineMaxRPM ( 1230 )
+	DieselEngineMaxRPMChangeRate( 125 )
+
+	DoesBrakeCutPower 					( 0 )
+	DoesHornTriggerBell 					( 0 )
+
+	EmergencyStopMonitor ()
+	VigilanceMonitor ()
+	OverspeedMonitor ()
+
+ 
+    
+    EngineControllers (    )
+)
