@@ -1,0 +1,49 @@
+			Stream (
+				Skip (  Simulation du klaxon deux tons - ton 1  )
+				Priority ( 6 )
+				Triggers ( 6
+					Discrete_Trigger ( 8
+						StartLoopRelease ( 1 File ( "ton1.wav" -1 ) SelectionMethod ( SequentialSelection ) )
+                      		)
+					Discrete_Trigger ( 9 
+						ReleaseLoopReleaseWithJump ()
+					)
+					Discrete_Trigger ( 10 
+						ReleaseLoopReleaseWithJump ()
+					)
+					Discrete_Trigger ( 8 
+						SetStreamVolume ( 1.0 )
+                      		)
+					Discrete_Trigger ( 9 
+						SetStreamVolume ( 0.0 )
+                      		)
+					Discrete_Trigger ( 10 
+						SetStreamVolume ( 0.0 )
+					)
+				)
+			)
+
+			Stream (
+				Skip (  Simulation du klaxon deux tons - ton 2  )
+				Priority ( 6 )
+				Triggers ( 6
+					Discrete_Trigger ( 10
+						StartLoopRelease ( 1 File ( "ton2.wav" -1 ) SelectionMethod ( SequentialSelection ) )
+                      		)
+					Discrete_Trigger ( 11 
+						ReleaseLoopReleaseWithJump ()
+					)
+					Discrete_Trigger ( 8 
+						ReleaseLoopReleaseWithJump ()
+					)
+					Discrete_Trigger ( 10 
+						SetStreamVolume ( 1.0 )
+                      		)
+					Discrete_Trigger ( 11 
+						SetStreamVolume ( 0.0 )
+                      		)
+					Discrete_Trigger ( 8 
+						SetStreamVolume ( 0.0 )
+					)
+				)
+			)

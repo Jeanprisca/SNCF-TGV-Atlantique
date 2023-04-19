@@ -1,0 +1,69 @@
+==================Kit sonore pour TGV Sud Est ==============
+
+Ce kit sonore reproduit l'ambiance du TGV Sud-Est. 
+
+Il comprend :
+
+- Le couinement de la transmission Tripode caractéristique aux rames SE en traction et en freinage rhéostatique, 
+- La ventilation des motrices en extérieur,
+- Le compresseur à piston en intérieur et en extérieur,
+- La veille d'appui,
+- Le test KVB et Veille d'appui.
+
+Installation:
+
+- Créez, si il n'existe pas déja, un répertoire SOUND sous le répertoire de la 
+  rame TGV de votre choix.
+- Dezippez le contenu de soundtgvpse.zip dans ce répertoire SOUND.
+- Remplacez le contenu des instructions sound (******eng.sms) et sound (*****cab.sms) présentes au sein du .eng (la 
+  ou les motrices) pour les remplacer par les nouveaux du .zip
+- Remplacez le contenu des instructions sound (******wag.sms) et sound (*****pas.sms) présentes au sein des .wag (la 
+  ou les remorques) pour les remplacer par les nouveaux du .zip 
+
+Cette étape est nécessaire au bon fonctionnement du son, elle définit une plus grande capacité en flux sonore au sein de TS :
+
+- Avant toutes choses: Faites une copie de sauvegarde de votre fichier soundcfg.dat placé dans le répertoire GLOBAL et 
+  gardez la préciseusement dans le dossier. 
+- Remplacez soundcfg.dat de votre dossier par le nouveau soundcfg.dat présent dans le dossier que vous avez décompressé
+- Acceptez le remplacement
+
+- C'est partit! :)
+
+=============================== IMPORTANT!===========================================================================
+
+- SI VOUS N'AVEZ AUCUN SON, VERIFIEZ QUE VOUS ETES BIEN EN RESOLUTION SONORE MAXIMALE DANS LES OPTIONS DE TS
+
+- SI VOUS ETTES SOUS WINDOWS XP ET QUE LE SON PRESENTE DES ANOMALIES IMPORTANTES (GRESILLEMENTS, SACCADEMENT), CHANGEZ
+  LE REGLAGE DE L'ACCELERATION MATERIELLE DE VOTRE CARTE/CHIPSET SONORE. LE MIEUX EST QUE L'ACCELERATION MATERIELLE SOIT
+  DESACTIVEE
+
+- SI LE VOLUME DE LA LOCOMOTIVE EN EXTERIEUR VOUS SEMBLE FAIBLE ALORS QUE TOUS LES VOLUMES DE TS SONT AU MAXIMUM, 
+  CHOISSISEZ UNE VUE DE CAMERA SUR LA PREMIERE REMORQUE PAR CTRL+FLECHE DROITE/GAUCHE. LE VOLUME DOIT NORMALEMENT ETRE
+  PORTE A SON NIVEAU OPTIMUM. OU ALORS UTILISEZ CTRL+SHIFT+9 ET ORIENTEZ VOUS "JOUE CONTRE OBJET". VERIFIER VOS REGLAGE 3D 
+  DANS LES VOLUMES. 
+  
+- SI VOUS DISPOSEZ D'UNE SONORISATION TYPE BASS-REFLEX OU CAISSON, MEFIEZ VOUS! FAITES DONC ATTENTION A VOTRE EQUALISATION
+  OU BAISSEZ LE VOLUME SONORE SI VOUS SENTEZ QUE CA VIRE TROP DANS LE ROUGE!
+
+=====================================================================================================================
+
+Remarques :
+
+-  Les transmissions tripodes que vous entendez réagissent en fonction de l'effort que vous 
+   appliquez au pointeau...
+   
+   Sur l'erre : Bagotement des pignons
+   Entre 0 et 15% de pointeau : Légère application de l'effort, les dents s'entrechoquent...
+   Au delà : Son établit... 
+
+   Décollez et accélérez doucement en manipulant progressivement le pointeau pour profiter de l'ambiance.....
+
+-  Le son a été conçu indépendamment de toute création. Il se peut qu'à certaines vitesses, selon les réglages dans le .eng
+   la motrice vous paraisse trop "relacher les pédales" pour l'effort et la vitesse demandée... adaptez les réglages des
+   efforts et de la puissance au niveau du .eng si nécessaire
+
+Belphégor
+
+Belphegor Copyright 2004/ 
+Reproduction et duplication sur support commercial strictement interdite
+All right reserved Copying and duplication on commercial support strictly forbidden

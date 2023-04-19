@@ -1,0 +1,155 @@
+SIMISA@@@@@@@@@@JINX0x1t______
+Tr_SMS (
+    Skip ( *** DUPLEXBAR.SMS V 1.0 *** )
+    Skip ( programmé par Belphegor )
+    Skip ( ******* )
+    Skip ( ** Belphegor Copyright 2002. All right reserved ** )
+    Skip ( ** Copying on commercial support strictly forbidden ** )
+    Skip ( ******** )
+    Skip ( * Ce SMS est spécialement prévu pour le Duplex d'Edouard ** )
+    Skip ( * ** )
+    Skip ( * version 3.03 13/12/2002 ** )
+    Skip ( * ** )
+    Skip ( * ******* )
+    ScalabiltyGroup ( 5
+        Activation (
+            ExternalCam ( )
+            Distance ( 55 )
+        )
+        Deactivation (
+            PassengerCam ( )
+            CabCam ( )
+            Distance ( 55 )
+        )
+        Streams ( 4
+            Stream (
+                Skip ( ****Bruit du réfrigérateur **** )
+                Priority ( 6 )
+                Triggers ( 1
+                    Initial_Trigger (
+                        StartLoopRelease ( 1
+                            File ( "XXFrigo.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 13
+                        -100.0 0.0
+                        -70.0 0.0
+                        -45.0 0.0
+                        -25.0 0.0
+                        -20.00 0.0
+                        -0.50 0.0
+                        0.000 0.5
+                        0.50 0.0
+                        20.00 0.0
+                        25.0 0.0
+                        45.0 0.0
+                        70.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( ****Bruit de convertisseur **** )
+                Priority ( 6 )
+                Triggers ( 1
+                    Initial_Trigger (
+                        StartLoopRelease ( 1
+                            File ( "XXConv.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 13
+                        -100.0 0.0
+                        -70.0 0.0
+                        -45.0 0.0
+                        -25.0 0.0
+                        -20.00 0.0
+                        -0.50 0.0
+                        0.000 0.1
+                        0.50 0.0
+                        20.00 0.0
+                        25.0 0.0
+                        45.0 0.0
+                        70.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( ****Bruit de roulement **** )
+                Priority ( 6 )
+                Triggers ( 1
+                    Initial_Trigger (
+                        StartLoopRelease ( 1
+                            File ( "XXVoit1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 15
+                        -187.0 1.2
+                        -100.0 0.6
+                        -70.0 0.6
+                        -45.0 0.4
+                        -25.0 0.3
+                        -20.00 0.2
+                        -0.50 0.1
+                        0.000 0.0
+                        0.50 0.1
+                        20.00 0.2
+                        25.0 0.3
+                        45.0 0.4
+                        70.0 0.6
+                        100.0 0.6
+                        187.0 1.2
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( ****Bruit aerodynamique **** )
+                Priority ( 6 )
+                Triggers ( 1
+                    Initial_Trigger (
+                        StartLoopRelease ( 1
+                            File ( "XXAero.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 15
+                        -187.0 1.6
+                        -100.0 0.8
+                        -70.0 0.4
+                        -45.0 0.2
+                        -25.0 0.0
+                        -20.00 0.0
+                        -0.50 0.0
+                        0.000 0.0
+                        0.50 0.0
+                        20.00 0.0
+                        25.0 0.0
+                        45.0 0.2
+                        70.0 0.4
+                        100.0 0.8
+                        187.0 1.6
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+        )
+    )
+) 

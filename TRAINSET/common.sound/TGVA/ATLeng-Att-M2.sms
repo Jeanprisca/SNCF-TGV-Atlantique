@@ -1,0 +1,562 @@
+SIMISA@@@@@@@@@@JINX0x1t______
+Tr_SMS (
+    ScalabiltyGroup ( 5
+        Activation (
+            ExternalCam ( )
+            Distance ( 5000 )
+        )
+        Deactivation (
+		    CabCam ( )
+            PassengerCam ( )
+            Distance ( 1000 )
+        )
+        Streams ( 18
+            Stream (
+                Priority ( 6 )
+                Triggers ( 5
+                    Skip ( *** XELECENGTGV.SMS V3.0 *** )
+                    Skip ( programmé par Belphegor )
+                    Skip ( ** Belphegor Copyright 2002. All right reserved** )
+                    Skip ( ** Copying on commercial support strictly forbidden** )
+                    Skip ( ******** )
+                    Skip ( C'est la vitesse qui pilote le pitch du son moteur et non le )
+                    Skip ( courant!!!..... Y manquait plus que ça,tient !!! )
+                    Initial_Trigger (
+                        StartLoop ( 1
+                            File ( "XXElec1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable1_Inc_Past 1.00
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Variable1_Inc_Past 1.00
+                        StartLoop ( 1
+                            File ( "XXElec2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable1_Dec_Past 1.00
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Variable1_Dec_Past 1.00
+                        StartLoop ( 1
+                            File ( "XXElec1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -150.000 110000
+                        0.000 3000
+                        150.000 110000
+                    )
+                    Granularity ( 25 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 13
+                        -150.0 0.0
+                        -105.0 0.0
+                        -67.5 0.1
+                        -37.5 0.4
+                        -30.00 0.6
+                        -0.75 0.9
+                        0.000 0.0
+                        0.75 0.9
+                        30.00 0.6
+                        37.5 0.4
+                        67.5 0.1
+                        105.0 0.0
+                        150.0 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( **** commande ouverture Dj **** )
+                Priority ( 6 )
+                Triggers ( 4
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 24
+                        PlayOneShot ( 1
+                            File ( "DJ-0.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Commande fermeture Dj **** )
+                Priority ( 6 )
+                Triggers ( 7
+                    Discrete_Trigger ( 23
+                        PlayOneShot ( 1
+                            File ( "DJ-1.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 23
+                        StartLoopRelease ( 1
+                            File ( "repos-motrice.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 104
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 104
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventil. moteur de traction MARCHE **** )
+                Priority ( 6 )
+                Triggers ( 7
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        PlayOneShot ( 1
+                            File ( "VTMT-1.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 103
+                        StartLoopRelease ( 1
+                            File ( "VTMT-2.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 104
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventil. moteur de traction ARRET **** )
+                Priority ( 6 )
+                Triggers ( 9
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 103
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 104
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 104
+                        PlayOneShot ( 1
+                            File ( "VTMT-3.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        PlayOneShot ( 1
+                            File ( "DJ-1.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        StartLoopRelease ( 1
+                            File ( "repos-motrice.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventilation BM **** )
+                Priority ( 6 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.0
+                        StartLoopRelease ( 1
+                            File ( "X_VentilSE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.0
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                )
+                FrequencyCurve (
+                    Variable2Controlled
+                    CurvePoints ( 4
+                        0.000 6000
+                        10.000 10000
+                        50.000 11025
+                        100.000 11025
+                    )
+                    Granularity ( 1 )
+                )
+                VolumeCurve (
+                    Variable2Controlled
+                    CurvePoints ( 2
+                        0.000 0.6
+                        0.600 0.6
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( **** compresseur **** )
+                Priority ( 5 )
+                Triggers ( 5
+                    Discrete_Trigger ( 12
+                        PlayOneShot ( 1
+                            File ( "CPR-1.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 12
+                        StartLoopRelease ( 1
+                            File ( "cpr-2.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 13
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 13
+                        PlayOneShot ( 1
+                            File ( "CPR-3.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Moteurs de traction Marche **** )
+                Priority ( 5 )
+                Triggers ( 5
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        PlayOneShot ( 1
+                            File ( "MT-1DOM.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        StartLoopRelease ( 1
+                            File ( "MT-2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Moteurs de traction Arret **** )
+                Priority ( 5 )
+                Triggers ( 1
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        PlayOneShot ( 1
+                            File ( "MT-3.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+			Stream (
+				Priority ( 6 )
+				Triggers ( 2
+					Variable_Trigger ( Variable3_Inc_Past 0.07  StartLoopRelease   ( 1 File ( "vt-fr-rh.wav" -1 )   SelectionMethod ( SequentialSelection ) ) )
+					Variable_Trigger ( Variable3_Dec_Past 0.07  ReleaseLoopRelease  () )
+					
+					
+				)
+				
+				VolumeCurve(
+					SpeedControlled
+					CurvePoints ( 5
+						 -167.0		1.0
+						  -6.0		1.0
+						   0.0		0.0
+						   6.0		1.0
+						 167.0		1.0
+					)
+					Granularity ( 0.05 )
+				)			
+
+			)
+            Stream (
+                Skip ( **** freinnage **** )
+                Priority ( 6 )
+                Triggers ( 2
+                    Skip ( **** freins **** )
+                    Discrete_Trigger ( 14
+                        PlayOneShot ( 2
+                            File ( "brake1.wav" -1 )
+                            File ( "brake2.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    Skip ( **** frein urg **** )
+                    Discrete_Trigger ( 54
+                        PlayOneShot ( 2
+                            File ( "brake1.wav" -1 )
+                            File ( "brake2.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( ****Bruit de la toiture **** )
+                Priority ( 6 )
+                Triggers ( 2
+                    Discrete_Trigger ( 45
+                        StartLoopRelease ( 1
+                            File ( "XXToitDans.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 46
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 13
+                        -71.0 0.0
+                        -50.0 0.0
+                        -32.0 0.0
+                        -15.7 0.0
+                        -14.3 0.5
+                        -0.35 0.6
+                        0.000 0.0
+                        0.35 0.6
+                        14.30 0.5
+                        15.7 0.0
+                        32.0 0.0
+                        50.0 0.0
+                        71.0 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( **** Abaissement Pantographe **** )
+                Priority ( 5 )
+                Triggers ( 6
+                    Discrete_Trigger ( 66
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 67
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 67
+                        PlayOneShot ( 1
+                            File ( "DE-PTC.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 45
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 46
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 46
+                        PlayOneShot ( 1
+                            File ( "DE-PTM.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** trappes attelages **** )
+                Priority ( 4 )
+                Triggers ( 4
+                    Discrete_Trigger ( 107
+                        SetStreamVolume ( 0.5 )
+                    )
+                    Discrete_Trigger ( 107
+                        PlayOneShot ( 1
+                            File ( "o-tr-at.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 108
+                        SetStreamVolume ( 0.5 )
+                    )
+                    Discrete_Trigger ( 108
+                        PlayOneShot ( 1
+                            File ( "f-tr-at.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+
+            Skip ( ** Sanor ** )
+            Stream (
+                Priority ( 6 )
+                Triggers ( 4
+                    Discrete_Trigger ( 8
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 8
+                        StartLoopRelease ( 2
+                            File ( "ton1.wav" -1 )
+                            File ( "ton2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 9
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+					Discrete_Trigger ( 9
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( ** Sablage ** )
+                Priority ( 5 )
+                Triggers ( 3
+                    Discrete_Trigger ( 4
+                        SetStreamVolume ( 0.4 )
+                    )
+                    Discrete_Trigger ( 4
+                        StartLoopRelease ( 1
+                            File ( "x_acela_sand.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 5
+                        ReleaseLoopRelease ( )
+                    )
+                )
+            )
+            Stream (
+                Skip ( ** Freins ** )
+                Priority ( 5 )
+                Triggers ( 2
+                    Skip ( ** Brake Normal Apply ** )
+                    Discrete_Trigger ( 53
+                        PlayOneShot ( 3
+                            File ( "x_acela_ibrake1.wav" -1 )
+                            File ( "x_acela_ibrake2.wav" -1 )
+                            File ( "x_acela_ibrake3.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    Skip ( ** Brake Emergency Apply ** )
+                    Discrete_Trigger ( 54
+                        PlayOneShot ( 3
+                            File ( "x_acela_ibrake1.wav" -1 )
+                            File ( "x_acela_ibrake2.wav" -1 )
+                            File ( "x_acela_ibrake3.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Priority ( 6 )
+                Volume ( 0.5 )
+                Triggers ( 6
+                    Discrete_Trigger ( 58
+                        PlayOneShot ( 1
+                            File ( "x_couple_auto1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 59
+                        PlayOneShot ( 1
+                            File ( "x_couple_auto2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 60
+                        PlayOneShot ( 1
+                            File ( "x_couple_auto3.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 61
+                        PlayOneShot ( 1
+                            File ( "x_uncouple_auto1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 62
+                        PlayOneShot ( 1
+                            File ( "x_uncouple_auto2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 63
+                        PlayOneShot ( 1
+                            File ( "x_uncouple_auto3.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+        )
+    )
+) 

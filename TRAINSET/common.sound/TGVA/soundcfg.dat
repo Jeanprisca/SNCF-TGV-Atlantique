@@ -1,0 +1,50 @@
+SIMISA@@@@@@@@@@JINX0S0t______
+
+Sound (
+	Skip ( Scalability 1 - Memory Guide 0 )
+	SoundTimer				( 1, 30, 5 )
+	AudioStream				( 1, 500, 100 )
+	SoundSystem				( 1, 80, 80, 0 )
+	TrainMinMaxDistance		( 1, 0.0, 1000.0 )
+	AmbientMinMaxDistance		( 1, 20.0, 1000.0 )
+	Rolloff				( 1, 1.0 )
+
+	Skip ( Scalability 2 - Memory Guide 1M )
+	SoundTimer				( 2, 30, 5 )
+	AudioStream				( 2, 500, 100 )
+	SoundSystem				( 2, 80, 80, 1048576 )
+	TrainMinMaxDistance		( 2, 0.0, 1000.0 )
+	AmbientMinMaxDistance		( 2, 20.0, 1000.0 )
+	Rolloff				( 2, 1.0 )
+
+	Skip ( Scalability 3 - Memory Guide 30M  )
+	SoundTimer				( 3, 30, 5 )
+	AudioStream				( 3, 500, 100 )
+	SoundSystem				( 3, 80, 80, 31457280 )
+	TrainMinMaxDistance		( 3, 0.0, 1000.0 )
+	AmbientMinMaxDistance		( 3, 20.0, 1000.0 )
+	Rolloff				( 3, 1.0 )
+
+	Skip ( Scalability 4 - Memory Guide 10M  )
+	SoundTimer				( 4, 30, 5 )
+	AudioStream				( 4, 500, 100 )
+	SoundSystem				( 4, 80, 80, 10485760 )
+	TrainMinMaxDistance		( 4, 0.0, 1000.0 )
+	AmbientMinMaxDistance		( 4, 20.0, 1000.0 )
+	Rolloff				( 4, 1.0 )
+
+	Skip ( Scalability 5 - Memory Guide 30M  )
+	SoundTimer				( 5, 30, 5 )
+	AudioStream				( 5, 500, 100 )
+	SoundSystem				( 5, 80, 80, 31457280 )
+	TrainMinMaxDistance		( 5, 0.0, 1000.0 )
+	AmbientMinMaxDistance		( 5, 20.0, 1000.0 )
+	Rolloff				( 5, 1.0 )
+	
+	Skip ( Generic, Overall stuff  )
+	VolumeTweak				( 1.0 0.4 )
+
+	Skip (****  modif  SoundSystem Scal 3&5:  x, 40, 40, 31457280 ****)
+)
+
+

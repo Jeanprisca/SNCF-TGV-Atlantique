@@ -1,0 +1,874 @@
+SIMISA@@@@@@@@@@JINX0x1t______
+Tr_SMS (
+    ScalabiltyGroup ( 5
+        Activation (
+            PassengerCam ( )
+        )
+        Deactivation (
+            ExternalCam ( )
+            CabCam ( )
+        )
+        Stereo ( )
+        Volume ( 0.5 )
+        Streams ( 13
+            Stream (
+                Skip ( ** stream 3D / Frein à disque *** )
+                Priority ( 6 )
+                Volume ( 0.7 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Speed_Dec_Past 3.0
+                        StartLoop ( 1
+                            File ( "dupl-frein1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 0.1
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 7
+                        -3.0 0.0
+                        -0.2 0.7
+                        -0.1 0.7
+                        0.0 0.0
+                        0.1 0.7
+                        0.2 0.7
+                        3.0 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 2
+                        -3.0 10500
+                        0.0 14000
+                        3.0 10500
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Skip ( **** Vibreur annonce départ **** )
+                Priority ( 5 )
+                Triggers ( 2
+                    Discrete_Trigger ( 106
+                        PlayOneShot ( 1
+                            File ( "VAD-FP.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 106
+                        SetStreamVolume ( 0.6 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ouverture portes **** )
+                Priority ( 5 )
+                Triggers ( 2
+                    Discrete_Trigger ( 105
+                        PlayOneShot ( 1
+                            File ( "OP.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 105
+                        SetStreamVolume ( 0.6 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** freinnage **** )
+                Priority ( 6 )
+                Triggers ( 2
+                    Skip ( **** dépression frein **** )
+                    Discrete_Trigger ( 14
+                        PlayOneShot ( 2
+                            File ( "dupl-freinEP.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    Skip ( **** frein urg **** )
+                    Discrete_Trigger ( 54
+                        PlayOneShot ( 2
+                            File ( "dupl-freinEP.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Priority ( 6 )
+                Triggers ( 3
+                    Initial_Trigger (
+                        StartLoopRelease ( 1
+                            File ( "c_Menschen.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 5.56
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 5.56
+                        StartLoopRelease ( 1
+                            File ( "c_Menschen.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 7
+                        0.00 0.59
+                        0.28 0.54
+                        0.84 0.49
+                        1.39 0.34
+                        2.78 0.24
+                        4.17 0.12
+                        5.56 0.00
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.01
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 11.12
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 11.12
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 0.01
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 6
+                        0.00 0.0
+                        1.39 0.2
+                        2.78 0.3
+                        8.34 0.4
+                        9.73 0.4
+                        11.12 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        -11.12 12000
+                        0.00 0
+                        1.39 8000
+                        11.12 12000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 8.34
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 13.89
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 13.89
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 8.34
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        8.34 0.0
+                        9.73 0.4
+                        12.50 0.4
+                        13.89 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -13.89 11025
+                        8.34 10200
+                        13.89 11025
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 12.50
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 22.23
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 22.23
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 12.50
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        12.50 0.0
+                        13.89 0.5
+                        20.84 0.5
+                        22.23 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -22.23 14000
+                        12.50 9000
+                        22.23 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 20.84
+                        StartLoop ( 1
+                            File ( "Speed_090_120.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 33.34
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 33.34
+                        StartLoop ( 1
+                            File ( "Speed_090_120.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 20.84
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        20.84 0.0
+                        22.23 0.5
+                        31.95 0.5
+                        33.34 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -33.34 14000
+                        20.84 9000
+                        33.34 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Speed_Inc_Past 31.95
+                        StartLoop ( 1
+                            File ( "SPEED_120_160.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 31.95
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        31.95 0.0
+                        33.34 0.5
+                        91.67 0.5
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -91.67 14000
+                        31.95 7000
+                        91.67 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+			Stream (
+				Skip ( **** Crissement des freins **** ) 
+				Priority ( 6 )
+				Volume ( 0.0 )
+				Triggers ( 5
+					Variable_Trigger ( BrakeCyl_Inc_Past 1.45
+						StartLoop (
+							1 File ( "frein_disque_TGV.wav" -1 ) SelectionMethod ( SequentialSelection ) 
+						)
+					)
+					Variable_Trigger ( BrakeCyl_Dec_Past 1.44
+						ReleaseLoopRelease ()
+					)
+					Variable_Trigger ( Speed_Dec_Past 2.22
+						SetStreamVolume ( 0.0 )
+					)
+					Variable_Trigger ( Speed_Inc_Past 2.23
+						SetStreamVolume ( 0.5 )
+					)
+					Variable_Trigger ( Speed_Inc_Past 1.39
+						SetStreamVolume ( 0.5 )
+					)
+				)
+				VolumeCurve (
+					BrakeCylControlled
+						CurvePoints ( 2
+							1.45	0.0
+							87.02	1.0
+						)
+					Granularity ( 0.01 )
+				)
+				FrequencyCurve (
+					BrakeCylControlled
+						CurvePoints ( 2
+							1.45	40000
+							87.02	48000
+						)
+					Granularity ( 0.01 )
+				)
+			)
+			
+			Stream (
+				Skip ( **** Crissement des freins **** ) 
+				Priority ( 6 )
+				Triggers ( 2
+					Variable_Trigger ( Speed_Dec_Past 2.22
+						PlayOneShot (
+							1 File ( "frein_disque_TGV_fin.wav" -1 ) SelectionMethod ( SequentialSelection ) 
+						)
+					)
+					Variable_Trigger ( BrakeCyl_Dec_Past 1.44
+						SetStreamVolume ( 0.0 )
+					)
+					Variable_Trigger ( BrakeCyl_Inc_Past 1.45
+						SetStreamVolume ( 0.5 )
+					)
+				)
+				VolumeCurve (
+					BrakeCylControlled
+						CurvePoints ( 2
+							1.45	0.0
+							87.02	1.0
+						)
+					Granularity ( 0.01 )
+				)
+			)
+            Stream (
+                Priority ( 5 )
+                Triggers ( 1
+                    Variable_Trigger (
+                        Speed_Dec_Past 4.17
+                        PlayOneShot ( 2
+                            File ( "Scheibenbremse_lang.wav" -1 )
+                            File ( "Scheibenbremse_kurz.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 7
+                        -4.17 0.2
+                        -0.84 0.6
+                        0.00 0.0
+                        0.84 0.6
+                        1.67 0.5
+                        2.78 0.4
+                        4.17 0.2
+                    )
+                    Granularity ( 0.05 )
+                )
+            )
+        )
+    )
+    ScalabiltyGroup ( 3
+        Activation (
+            PassengerCam ( )
+        )
+        Deactivation (
+            ExternalCam ( )
+            CabCam ( )
+        )
+        Streams ( 5
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.01
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 11.12
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 11.12
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 0.01
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 6
+                        0.00 0.0
+                        1.39 0.2
+                        2.78 0.3
+                        8.34 0.4
+                        9.73 0.4
+                        11.12 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        -11.12 12000
+                        0.00 0
+                        1.39 8000
+                        11.12 12000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 8.34
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 13.89
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 13.89
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 8.34
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        8.34 0.0
+                        9.73 0.4
+                        12.50 0.4
+                        13.89 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -13.89 11025
+                        8.34 10200
+                        13.89 11025
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 12.50
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 22.23
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 22.23
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 12.50
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        12.50 0.0
+                        13.89 0.5
+                        20.84 0.5
+                        22.23 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -22.23 14000
+                        12.50 9000
+                        22.23 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 20.84
+                        StartLoop ( 1
+                            File ( "Speed_090_120.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 33.34
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 33.34
+                        StartLoop ( 1
+                            File ( "Speed_090_120.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 20.84
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        20.84 0.0
+                        22.23 0.5
+                        31.95 0.5
+                        33.34 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -33.34 14000
+                        20.84 9000
+                        33.34 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Speed_Inc_Past 31.95
+                        StartLoop ( 1
+                            File ( "SPEED_120_160.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 31.95
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        31.95 0.0
+                        33.34 0.5
+                        91.67 0.5
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -91.67 14000
+                        31.95 7000
+                        91.67 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+        )
+    )
+    ScalabiltyGroup ( 1
+        Activation (
+            PassengerCam ( )
+        )
+        Deactivation (
+            ExternalCam ( )
+            CabCam ( )
+        )
+        Streams ( 4
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.01
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 11.12
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 11.12
+                        StartLoop ( 1
+                            File ( "Speed_000_10.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 0.01
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 6
+                        0.00 0.0
+                        1.39 0.2
+                        2.78 0.3
+                        8.34 0.4
+                        9.73 0.4
+                        11.12 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        -11.12 12000
+                        0.00 0
+                        1.39 8000
+                        11.12 12000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 8.34
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 13.89
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 13.89
+                        StartLoop ( 1
+                            File ( "Speed_010_60.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 8.34
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        8.34 0.0
+                        9.73 0.4
+                        12.50 0.4
+                        13.89 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -13.89 11025
+                        8.34 10200
+                        13.89 11025
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 4
+                    Variable_Trigger (
+                        Speed_Inc_Past 12.50
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 22.23
+                        ReleaseLoopRelease ( )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 22.23
+                        StartLoop ( 1
+                            File ( "Speed_060_090.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Dec_Past 12.50
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 4
+                        12.50 0.0
+                        13.89 0.5
+                        20.84 0.5
+                        22.23 0.0
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -22.23 14000
+                        12.50 9000
+                        22.23 14000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+            Stream (
+                Priority ( 5 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Speed_Inc_Past 20.84
+                        StartLoop ( 1
+                            File ( "SPEED_120_160.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Speed_Inc_Past 20.84
+                        ReleaseLoopRelease ( )
+                    )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        20.84 0.0
+                        22.23 0.5
+                        91.67 0.7
+                    )
+                    Granularity ( 0.05 )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -91.67 18000
+                        20.84 9000
+                        91.67 18000
+                    )
+                    Granularity ( 25 )
+                )
+            )
+        )
+    )
+) 

@@ -1,0 +1,4249 @@
+SIMISA@@@@@@@@@@JINX0x1t______
+Tr_SMS (
+    ScalabiltyGroup ( 3
+        Activation (
+            CabCam ( )
+            Distance ( 100 )
+        )
+        Deactivation (
+            ExternalCam ( )
+            PassengerCam ( )
+            Distance ( 100 )
+        )
+        Stereo ( )
+        Streams ( 32
+			Stream (
+				Skip ( **** Fermeture des portes (ASCT) **** )
+				Priority ( 6 )
+				Volume ( 1.0 )
+				Triggers ( 3
+					Discrete_Trigger ( 106
+						PlayOneShot ( 2
+							File ( "Ding-double-7600.wav" -1 )
+							File ( "Ding-double-7600-2.wav" -1 )
+						SelectionMethod ( RandomSelection )
+						)
+					)
+					Discrete_Trigger ( 107
+						SetStreamVolume ( 0.0 )
+					)
+					Discrete_Trigger ( 108
+						SetStreamVolume ( 1.0 )
+					)
+				)
+			)
+            Stream (
+                Skip ( ** stream 3D / Fondamentales * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "FSE0.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139774
+                        -100.000 69887
+                        0.000 1
+                        100.000 69887
+                        200.000 139774
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.8
+                        2.0 0.8
+                        3.0 0.8
+                        4.0 0.8
+                        5.0 0.8
+                        6.0 0.8
+                        7.0 0.8
+                        8.0 0.8
+                        9.0 0.8
+                        10.0 0.8
+                        11.0 0.8
+                        12.0 0.8
+                        13.0 0.8
+                        14.0 0.7
+                        15.0 0.7
+                        16.0 0.7
+                        17.0 0.7
+                        18.0 0.7
+                        19.0 0.7
+                        20.0 0.7
+                        21.0 0.7
+                        22.0 0.7
+                        23.0 0.7
+                        24.0 0.7
+                        25.0 0.6
+                        26.0 0.6
+                        27.0 0.6
+                        28.0 0.6
+                        29.0 0.6
+                        30.0 0.6
+                        31.0 0.6
+                        32.0 0.6
+                        33.0 0.6
+                        34.0 0.6
+                        35.0 0.6
+                        36.0 0.6
+                        37.0 0.6
+                        38.0 0.6
+                        39.0 0.6
+                        40.0 0.6
+                        41.0 0.5
+                        42.0 0.5
+                        43.0 0.4
+                        44.0 0.4
+                        45.0 0.4
+                        46.0 0.3
+                        47.0 0.3
+                        48.0 0.3
+                        49.0 0.2
+                        50.0 0.2
+                        51.0 0.1
+                        52.0 0.1
+                        53.0 0.1
+                        54.0 0.1
+                        55.0 0.1
+                        56.0 0.1
+                        57.0 0.0
+                        58.0 0.0
+                        59.0 0.0
+                        60.0 0.0
+                        61.0 0.1
+                        62.0 0.1
+                        63.0 0.1
+                        64.0 0.1
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Fondamentales sans battements * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "FSE0-1.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139774
+                        -100.000 69887
+                        0.000 1
+                        100.000 69887
+                        200.000 139774
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.0
+                        14.0 0.0
+                        15.0 0.0
+                        16.0 0.0
+                        17.0 0.0
+                        18.0 0.0
+                        19.0 0.0
+                        20.0 0.0
+                        21.0 0.0
+                        22.0 0.0
+                        23.0 0.0
+                        24.0 0.0
+                        25.0 0.0
+                        26.0 0.0
+                        27.0 0.0
+                        28.0 0.0
+                        29.0 0.0
+                        30.0 0.0
+                        31.0 0.0
+                        32.0 0.0
+                        33.0 0.0
+                        34.0 0.0
+                        35.0 0.0
+                        36.0 0.0
+                        37.0 0.0
+                        38.0 0.0
+                        39.0 0.0
+                        40.0 0.0
+                        41.0 0.0
+                        42.0 0.0
+                        43.0 0.0
+                        44.0 0.0
+                        45.0 0.0
+                        46.0 0.0
+                        47.0 0.0
+                        48.0 0.0
+                        49.0 0.0
+                        50.0 0.0
+                        51.0 0.1
+                        52.0 0.1
+                        53.0 0.1
+                        54.0 0.2
+                        55.0 0.2
+                        56.0 0.2
+                        57.0 0.3
+                        58.0 0.3
+                        59.0 0.3
+                        60.0 0.3
+                        61.0 0.3
+                        62.0 0.4
+                        63.0 0.3
+                        64.0 0.3
+                        65.0 0.2
+                        66.0 0.2
+                        67.0 0.2
+                        68.0 0.2
+                        69.0 0.2
+                        70.0 0.2
+                        71.0 0.2
+                        72.0 0.2
+                        73.0 0.1
+                        74.0 0.1
+                        75.0 0.1
+                        76.0 0.1
+                        77.0 0.1
+                        78.0 0.1
+                        79.0 0.1
+                        80.0 0.1
+                        81.0 0.1
+                        82.0 0.1
+                        83.0 0.1
+                        84.0 0.1
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Fondamentales avec battements - rapide haute vitesse * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "FSE0-2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139774
+                        -100.000 69887
+                        0.000 1
+                        100.000 69887
+                        200.000 139774
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.0
+                        14.0 0.0
+                        15.0 0.0
+                        16.0 0.0
+                        17.0 0.0
+                        18.0 0.0
+                        19.0 0.0
+                        20.0 0.1
+                        21.0 0.2
+                        22.0 0.3
+                        23.0 0.4
+                        24.0 0.5
+                        25.0 0.6
+                        26.0 0.6
+                        27.0 0.6
+                        28.0 0.6
+                        29.0 0.6
+                        30.0 0.6
+                        31.0 0.6
+                        32.0 0.6
+                        33.0 0.6
+                        34.0 0.6
+                        35.0 0.6
+                        36.0 0.6
+                        37.0 0.6
+                        38.0 0.6
+                        39.0 0.6
+                        40.0 0.6
+                        41.0 0.5
+                        42.0 0.5
+                        43.0 0.4
+                        44.0 0.4
+                        45.0 0.4
+                        46.0 0.3
+                        47.0 0.3
+                        48.0 0.3
+                        49.0 0.3
+                        50.0 0.3
+                        51.0 0.3
+                        52.0 0.3
+                        53.0 0.3
+                        54.0 0.3
+                        55.0 0.3
+                        56.0 0.3
+                        57.0 0.3
+                        58.0 0.3
+                        59.0 0.3
+                        60.0 0.3
+                        61.0 0.3
+                        62.0 0.3
+                        63.0 0.3
+                        64.0 0.3
+                        65.0 0.3
+                        66.0 0.3
+                        67.0 0.3
+                        68.0 0.3
+                        69.0 0.3
+                        70.0 0.3
+                        71.0 0.3
+                        72.0 0.3
+                        73.0 0.3
+                        74.0 0.3
+                        75.0 0.3
+                        76.0 0.3
+                        77.0 0.3
+                        78.0 0.3
+                        79.0 0.3
+                        80.0 0.3
+                        81.0 0.3
+                        82.0 0.3
+                        83.0 0.3
+                        84.0 0.3
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Fondamentales avec battements - rapide basse vitesse * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "FSE0-3.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.10 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.25 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.80 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.20 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139774
+                        -100.000 69887
+                        0.000 1
+                        100.000 69887
+                        200.000 139774
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.1
+                        7.0 0.2
+                        8.0 0.3
+                        9.0 0.4
+                        10.0 0.5
+                        11.0 0.5
+                        12.0 0.5
+                        13.0 0.5
+                        14.0 0.5
+                        15.0 0.6
+                        16.0 0.6
+                        17.0 0.6
+                        18.0 0.6
+                        19.0 0.6
+                        20.0 0.6
+                        21.0 0.5
+                        22.0 0.5
+                        23.0 0.5
+                        24.0 0.5
+                        25.0 0.4
+                        26.0 0.4
+                        27.0 0.3
+                        28.0 0.3
+                        29.0 0.2
+                        30.0 0.1
+                        31.0 0.0
+                        32.0 0.0
+                        33.0 0.0
+                        34.0 0.0
+                        35.0 0.0
+                        36.0 0.0
+                        37.0 0.0
+                        38.0 0.0
+                        39.0 0.0
+                        40.0 0.0
+                        41.0 0.0
+                        42.0 0.0
+                        43.0 0.0
+                        44.0 0.0
+                        45.0 0.0
+                        46.0 0.0
+                        47.0 0.0
+                        48.0 0.0
+                        49.0 0.0
+                        50.0 0.0
+                        51.0 0.0
+                        52.0 0.0
+                        53.0 0.0
+                        54.0 0.0
+                        55.0 0.0
+                        56.0 0.0
+                        57.0 0.0
+                        58.0 0.0
+                        59.0 0.0
+                        60.0 0.0
+                        61.0 0.0
+                        62.0 0.0
+                        63.0 0.0
+                        64.0 0.0
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmoniques 1 ** )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H1SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139754
+                        -100.000 69877
+                        0.000 1
+                        100.000 69877
+                        200.000 139754
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.01
+                        6.0 0.01
+                        7.0 0.02
+                        8.0 0.02
+                        9.0 0.03
+                        10.0 0.03
+                        11.0 0.04
+                        12.0 0.04
+                        13.0 0.04
+                        14.0 0.05
+                        15.0 0.1
+                        16.0 0.18
+                        17.0 0.12
+                        18.0 0.1
+                        19.0 0.12
+                        20.0 0.14
+                        21.0 0.12
+                        22.0 0.1
+                        23.0 0.12
+                        24.0 0.14
+                        25.0 0.15
+                        26.0 0.18
+                        27.0 0.15
+                        28.0 0.12
+                        29.0 0.12
+                        30.0 0.14
+                        31.0 0.12
+                        32.0 0.1
+                        33.0 0.12
+                        34.0 0.14
+                        35.0 0.15
+                        36.0 0.18
+                        37.0 0.15
+                        38.0 0.12
+                        39.0 0.1
+                        40.0 0.06
+                        41.0 0.06
+                        42.0 0.1
+                        43.0 0.12
+                        44.0 0.14
+                        45.0 0.15
+                        46.0 0.18
+                        47.0 0.15
+                        48.0 0.12
+                        49.0 0.1
+                        50.0 0.05
+                        51.0 0.04
+                        52.0 0.03
+                        53.0 0.02
+                        54.0 0.02
+                        55.0 0.02
+                        56.0 0.01
+                        57.0 0.01
+                        58.0 0.01
+                        59.0 0.01
+                        60.0 0.01
+                        61.0 0.0
+                        62.0 0.0
+                        63.0 0.0
+                        64.0 0.0
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmoniques 2 ** )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H2SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139734
+                        -100.000 69867
+                        0.000 1
+                        100.000 69867
+                        200.000 139734
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.0
+                        14.0 0.05
+                        15.0 0.1
+                        16.0 0.15
+                        17.0 0.1
+                        18.0 0.05
+                        19.0 0.03
+                        20.0 0.03
+                        21.0 0.03
+                        22.0 0.03
+                        23.0 0.03
+                        24.0 0.1
+                        25.0 0.2
+                        26.0 0.3
+                        27.0 0.2
+                        28.0 0.1
+                        29.0 0.03
+                        30.0 0.02
+                        31.0 0.03
+                        32.0 0.03
+                        33.0 0.03
+                        34.0 0.1
+                        35.0 0.2
+                        36.0 0.3
+                        37.0 0.2
+                        38.0 0.1
+                        39.0 0.03
+                        40.0 0.02
+                        41.0 0.03
+                        42.0 0.03
+                        43.0 0.03
+                        44.0 0.1
+                        45.0 0.2
+                        46.0 0.3
+                        47.0 0.2
+                        48.0 0.1
+                        49.0 0.03
+                        50.0 0.02
+                        51.0 0.03
+                        52.0 0.03
+                        53.0 0.03
+                        54.0 0.02
+                        55.0 0.01
+                        56.0 0.01
+                        57.0 0.0
+                        58.0 0.0
+                        59.0 0.0
+                        60.0 0.0
+                        61.0 0.0
+                        62.0 0.0
+                        63.0 0.0
+                        64.0 0.0
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmoniques 3 ** )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H3SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139714
+                        -100.000 69857
+                        0.000 1
+                        100.000 69857
+                        200.000 139714
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.01
+                        14.0 0.05
+                        15.0 0.13
+                        16.0 0.18
+                        17.0 0.13
+                        18.0 0.13
+                        19.0 0.13
+                        20.0 0.13
+                        21.0 0.13
+                        22.0 0.13
+                        23.0 0.13
+                        24.0 0.13
+                        25.0 0.14
+                        26.0 0.18
+                        27.0 0.14
+                        28.0 0.13
+                        29.0 0.13
+                        30.0 0.13
+                        31.0 0.13
+                        32.0 0.13
+                        33.0 0.13
+                        34.0 0.13
+                        35.0 0.14
+                        36.0 0.18
+                        37.0 0.14
+                        38.0 0.12
+                        39.0 0.10
+                        40.0 0.08
+                        41.0 0.06
+                        42.0 0.04
+                        43.0 0.03
+                        44.0 0.02
+                        45.0 0.01
+                        46.0 0.0
+                        47.0 0.0
+                        48.0 0.0
+                        49.0 0.0
+                        50.0 0.0
+                        51.0 0.0
+                        52.0 0.0
+                        53.0 0.0
+                        54.0 0.0
+                        55.0 0.0
+                        56.0 0.0
+                        57.0 0.0
+                        58.0 0.0
+                        59.0 0.0
+                        60.0 0.0
+                        61.0 0.0
+                        62.0 0.0
+                        63.0 0.0
+                        64.0 0.0
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmoniques 4 * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H4SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139694
+                        -100.000 69847
+                        0.000 1
+                        100.000 69847
+                        200.000 139694
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.0
+                        14.0 0.0
+                        15.0 0.0
+                        16.0 0.0
+                        17.0 0.2
+                        18.0 0.1
+                        19.0 0.0
+                        20.0 0.1
+                        21.0 0.0
+                        22.0 0.3
+                        23.0 0.2
+                        24.0 0.0
+                        25.0 0.0
+                        26.0 0.2
+                        27.0 0.0
+                        28.0 0.0
+                        29.0 0.3
+                        30.0 0.2
+                        31.0 0.0
+                        32.0 0.3
+                        33.0 0.2
+                        34.0 0.0
+                        35.0 0.0
+                        36.0 0.2
+                        37.0 0.0
+                        38.0 0.0
+                        39.0 0.3
+                        40.0 0.2
+                        41.0 0.0
+                        42.0 0.3
+                        43.0 0.2
+                        44.0 0.0
+                        45.0 0.0
+                        46.0 0.2
+                        47.0 0.0
+                        48.0 0.0
+                        49.0 0.3
+                        50.0 0.2
+                        51.0 0.0
+                        52.0 0.0
+                        53.0 0.0
+                        54.0 0.0
+                        55.0 0.0
+                        56.0 0.2
+                        57.0 0.0
+                        58.0 0.0
+                        59.0 0.0
+                        60.0 0.0
+                        61.0 0.0
+                        62.0 0.0
+                        63.0 0.0
+                        64.0 0.0
+                        65.0 0.0
+                        66.0 0.0
+                        67.0 0.0
+                        68.0 0.0
+                        69.0 0.0
+                        70.0 0.0
+                        71.0 0.0
+                        72.0 0.0
+                        73.0 0.0
+                        74.0 0.0
+                        75.0 0.0
+                        76.0 0.0
+                        77.0 0.0
+                        78.0 0.0
+                        79.0 0.0
+                        80.0 0.0
+                        81.0 0.0
+                        82.0 0.0
+                        83.0 0.0
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmoniques 5 * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H5SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139674
+                        -100.000 69837
+                        0.000 1
+                        100.000 69837
+                        200.000 139674
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.0
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.01
+                        13.0 0.05
+                        13.0 0.11
+                        14.0 0.15
+                        15.0 0.2
+                        16.0 0.3
+                        17.0 0.36
+                        18.0 0.32
+                        19.0 0.34
+                        20.0 0.36
+                        21.0 0.34
+                        22.0 0.32
+                        23.0 0.32
+                        24.0 0.32
+                        25.0 0.36
+                        26.0 0.4
+                        27.0 0.36
+                        28.0 0.24
+                        29.0 0.22
+                        30.0 0.22
+                        31.0 0.24
+                        32.0 0.22
+                        33.0 0.22
+                        34.0 0.22
+                        35.0 0.26
+                        36.0 0.23
+                        37.0 0.16
+                        38.0 0.14
+                        39.0 0.12
+                        40.0 0.1
+                        41.0 0.06
+                        42.0 0.05
+                        43.0 0.1
+                        44.0 0.12
+                        45.0 0.16
+                        46.0 0.2
+                        47.0 0.16
+                        48.0 0.14
+                        49.0 0.12
+                        50.0 0.1
+                        51.0 0.06
+                        52.0 0.05
+                        53.0 0.1
+                        54.0 0.12
+                        55.0 0.16
+                        56.0 0.2
+                        57.0 0.16
+                        58.0 0.14
+                        59.0 0.12
+                        60.0 0.1
+                        61.0 0.06
+                        62.0 0.05
+                        63.0 0.05
+                        64.0 0.1
+                        65.0 0.12
+                        66.0 0.16
+                        67.0 0.2
+                        68.0 0.2
+                        69.0 0.24
+                        70.0 0.26
+                        71.0 0.3
+                        72.0 0.26
+                        73.0 0.24
+                        74.0 0.2
+                        75.0 0.16
+                        76.0 0.12
+                        77.0 0.1
+                        78.0 0.05
+                        79.0 0.05
+                        80.0 0.05
+                        81.0 0.15
+                        82.0 0.15
+                        83.0 0.1
+                        84.0 0.0
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Harmonique 6 * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "H6SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 139654
+                        -100.000 69827
+                        0.000 1
+                        100.000 69827
+                        200.000 139654
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.0
+                        2.0 0.0
+                        3.0 0.0
+                        4.0 0.0
+                        5.0 0.0
+                        6.0 0.9
+                        7.0 0.0
+                        8.0 0.0
+                        9.0 0.0
+                        10.0 0.0
+                        11.0 0.0
+                        12.0 0.0
+                        13.0 0.0
+                        14.0 0.0
+                        15.0 0.0
+                        16.0 0.0
+                        17.0 0.0
+                        18.0 0.0
+                        19.0 0.0
+                        20.0 0.0
+                        21.0 0.0
+                        22.0 0.0
+                        23.0 0.0
+                        24.0 0.0
+                        25.0 0.0
+                        26.0 0.0
+                        27.0 0.0
+                        28.0 0.0
+                        29.0 0.0
+                        30.0 0.0
+                        31.0 0.0
+                        32.0 0.0
+                        33.0 0.0
+                        34.0 0.0
+                        35.0 0.0
+                        36.0 0.0
+                        37.0 0.0
+                        38.0 0.0
+                        39.0 0.0
+                        40.0 0.0
+                        41.0 0.0
+                        42.0 0.0
+                        43.0 0.0
+                        44.0 0.0
+                        45.0 0.0
+                        46.0 0.0
+                        47.0 0.0
+                        48.0 0.0
+                        49.0 0.0
+                        50.0 0.4
+                        51.0 0.4
+                        52.0 0.4
+                        53.0 0.3
+                        54.0 0.3
+                        55.0 0.3
+                        56.0 0.2
+                        57.0 0.2
+                        58.0 0.2
+                        59.0 0.2
+                        60.0 0.2
+                        61.0 0.1
+                        62.0 0.1
+                        63.0 0.2
+                        64.0 0.3
+                        65.0 0.3
+                        66.0 0.3
+                        67.0 0.2
+                        68.0 0.2
+                        69.0 0.1
+                        70.0 0.1
+                        71.0 0.1
+                        72.0 0.1
+                        73.0 0.1
+                        74.0 0.1
+                        75.0 0.1
+                        76.0 0.1
+                        77.0 0.1
+                        78.0 0.1
+                        79.0 0.1
+                        80.0 0.1
+                        81.0 0.1
+                        82.0 0.1
+                        83.0 0.1
+                        84.0 0.1
+                        85.0 0.0
+                        86.0 0.0
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / erre 205 * )
+                Priority ( 6 )
+                Triggers ( 33
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "E205SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.16
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.5
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.16
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.0
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.66
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.416
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.083
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.083
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.416
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.66
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.16
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.5
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.16
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.08
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.046
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.040
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.033
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.023
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0083
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0016
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0016
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0083
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.023
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.033
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.040
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.046
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.08
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 9
+                        -100 16500
+                        -72 15000
+                        -56 10785
+                        -40 8000
+                        0.0 8000
+                        40 8000
+                        56 10785
+                        72 15000
+                        100 16500
+                    )
+                    Granularity ( 1 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 13
+                        -100.0 0.2
+                        -84.0 0.3
+                        -64.0 0.7
+                        -56.0 0.8
+                        -47.5 0.6
+                        -42.0 0.0
+                        0.0 0.0
+                        42.0 0.0
+                        47.5 0.6
+                        56.0 0.8
+                        64.0 0.7
+                        84.0 0.3
+                        100.0 0.2
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / erre 154 * )
+                Priority ( 6 )
+                Triggers ( 33
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "E154SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 8.0
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.3
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 3.0
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.5
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.0
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.3
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.8
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.8
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.3
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.5
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 3.0
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.3
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 8.0
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.08
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.046
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.040
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.033
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.023
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0083
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0016
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0016
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0083
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.023
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.033
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.040
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.046
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.08
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 7
+                        -56 13500
+                        -43 10785
+                        -14 3600
+                        0.0 3600
+                        14 3600
+                        43 10785
+                        56 13500
+                    )
+                    Granularity ( 1 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 15
+                        -100.0 0.0
+                        -56.0 0.0
+                        -47.5 0.6
+                        -42.0 1.0
+                        -28.0 0.7
+                        -20.1 0.5
+                        -14.0 0.0
+                        0.0 0.0
+                        14.0 0.0
+                        20.1 0.5
+                        28.0 0.7
+                        42.0 1.0
+                        47.5 0.6
+                        56.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / erre 055 * )
+                Priority ( 6 )
+                Triggers ( 33
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "E055SE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 8.0
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 3.3
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.3
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.3
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 3.3
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 8.0
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.08
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.046
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.040
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.033
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.023
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0083
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.0016
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0016
+                        SetStreamVolume ( 0.60 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.0083
+                        SetStreamVolume ( 0.45 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.023
+                        SetStreamVolume ( 0.35 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.033
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.040
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.046
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.04 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.08
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 7
+                        -30 19000
+                        -15 10785
+                        -7.5 4500
+                        0.0 4500
+                        7.5 4500
+                        15 10785
+                        30 19000
+                    )
+                    Granularity ( 1 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 11
+                        -28.0 0.0
+                        -20.1 0.5
+                        -14.0 0.7
+                        -8.0 0.35
+                        -6.0 0.0
+                        0.0 0.0
+                        6.0 0.0
+                        8.0 0.35
+                        14.0 0.7
+                        20.1 0.5
+                        28.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe Bruit * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Speed_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "NoiseSE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.09
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.09
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 3
+                        -100.000 11050
+                        0.000 11050
+                        100.000 11050
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 101
+                        0.0 0.0
+                        1.0 0.7
+                        2.0 0.7
+                        3.0 0.7
+                        4.0 0.7
+                        5.0 0.7
+                        6.0 0.7
+                        7.0 0.7
+                        8.0 0.6
+                        9.0 0.6
+                        10.0 0.6
+                        11.0 0.6
+                        12.0 0.6
+                        13.0 0.6
+                        14.0 0.6
+                        15.0 0.6
+                        16.0 0.6
+                        17.0 0.6
+                        18.0 0.6
+                        19.0 0.6
+                        20.0 0.6
+                        21.0 0.6
+                        22.0 0.6
+                        23.0 0.6
+                        24.0 0.6
+                        25.0 0.6
+                        26.0 0.6
+                        27.0 0.6
+                        28.0 0.6
+                        29.0 0.6
+                        30.0 0.6
+                        31.0 0.6
+                        32.0 0.6
+                        33.0 0.6
+                        34.0 0.6
+                        35.0 0.6
+                        36.0 0.6
+                        37.0 0.6
+                        38.0 0.6
+                        39.0 0.5
+                        40.0 0.5
+                        41.0 0.5
+                        42.0 0.5
+                        43.0 0.5
+                        44.0 0.5
+                        45.0 0.5
+                        46.0 0.5
+                        47.0 0.5
+                        48.0 0.5
+                        49.0 0.5
+                        50.0 0.5
+                        51.0 0.5
+                        52.0 0.5
+                        53.0 0.5
+                        54.0 0.5
+                        55.0 0.5
+                        56.0 0.5
+                        57.0 0.5
+                        58.0 0.5
+                        59.0 0.5
+                        60.0 0.5
+                        61.0 0.6
+                        62.0 0.6
+                        63.0 0.6
+                        64.0 0.6
+                        65.0 0.6
+                        66.0 0.6
+                        67.0 0.7
+                        68.0 0.7
+                        69.0 0.7
+                        70.0 0.7
+                        71.0 0.7
+                        72.0 0.7
+                        73.0 0.7
+                        74.0 0.7
+                        75.0 0.7
+                        76.0 0.7
+                        77.0 0.7
+                        78.0 0.7
+                        79.0 0.7
+                        80.0 0.7
+                        81.0 0.7
+                        82.0 0.7
+                        83.0 0.7
+                        84.0 0.7
+                        85.0 0.7
+                        86.0 0.7
+                        87.0 0.0
+                        88.0 0.0
+                        89.0 0.0
+                        90.0 0.0
+                        91.0 0.0
+                        92.0 0.0
+                        93.0 0.0
+                        94.0 0.0
+                        95.0 0.0
+                        96.0 0.0
+                        97.0 0.0
+                        98.0 0.0
+                        99.0 0.0
+                        100.0 0.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( ** stream 3D / Groupe 100 Hz * )
+                Priority ( 6 )
+                Triggers ( 37
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.1
+                        StartLoop ( 1
+                            File ( "100Hz.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.16
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.83
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 2.6
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 4.0
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 5.3
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 6.6
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 9.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 23.3
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 23.3
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 9.3
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 6.6
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 5.3
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 4.0
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 2.6
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.6
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.83
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.16
+                        SetStreamVolume ( 0.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.003
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.008
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.016
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.026
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.04
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.053
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.066
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.093
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Inc_Past 0.23
+                        SetStreamVolume ( 1.00 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.23
+                        SetStreamVolume ( 0.84 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.093
+                        SetStreamVolume ( 0.70 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.066
+                        SetStreamVolume ( 0.50 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.053
+                        SetStreamVolume ( 0.36 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.04
+                        SetStreamVolume ( 0.26 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.026
+                        SetStreamVolume ( 0.15 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.016
+                        SetStreamVolume ( 0.08 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.008
+                        SetStreamVolume ( 0.05 )
+                    )
+                    Variable_Trigger (
+                        Variable3_Dec_Past 0.003
+                        SetStreamVolume ( 0.00 )
+                    )
+                )
+                FrequencyCurve (
+                    SpeedControlled
+                    CurvePoints ( 5
+                        -200.000 11025
+                        -100.000 11025
+                        0.000 11025
+                        100.000 11025
+                        200.000 11025
+                    )
+                    Granularity ( 10 )
+                )
+                VolumeCurve (
+                    SpeedControlled
+                    CurvePoints ( 8
+                        0.0 0.0
+                        10.0 0.3
+                        20.0 0.4
+                        30.0 0.8
+                        40.0 1.0
+                        50.0 1.0
+                        60.0 1.0
+                        100.0 1.0
+                    )
+                    Granularity ( 0.01 )
+                )
+            )
+            Stream (
+                Skip ( **** Climatisation cabine **** )
+                Priority ( 5 )
+                Triggers ( 6
+                    Discrete_Trigger ( 45
+                        PlayOneShot ( 1
+                            File ( "x_acela_pantou0dB.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 66
+                        PlayOneShot ( 1
+                            File ( "x_acela_pantou0dB.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 23
+                        PlayOneShot ( 1
+                            File ( "clm1.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 23
+                        StartLoopRelease ( 1
+                            File ( "clm2.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 24
+                        PlayOneShot ( 1
+                            File ( "clm3.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** commande ouverture Dj **** )
+                Priority ( 6 )
+                Triggers ( 4
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 24
+                        PlayOneShot ( 1
+                            File ( "DJ-0cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Commande fermeture Dj **** )
+                Priority ( 6 )
+                Triggers ( 5
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 23
+                        PlayOneShot ( 1
+                            File ( "DJ-1cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 23
+                        StartLoopRelease ( 1
+                            File ( "repos-motrice-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventil. moteur de traction MARCHE **** )
+                Priority ( 6 )
+                Triggers ( 7
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        PlayOneShot ( 1
+                            File ( "VTMT-1-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 103
+                        StartLoopRelease ( 1
+                            File ( "VTMT-2-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 104
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventil. moteur de traction ARRET **** )
+                Priority ( 6 )
+                Triggers ( 9
+                    Discrete_Trigger ( 23
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 24
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 103
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 103
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Discrete_Trigger ( 104
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 104
+                        PlayOneShot ( 1
+                            File ( "VTMT-3-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        PlayOneShot ( 1
+                            File ( "DJ-1-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 104
+                        StartLoopRelease ( 1
+                            File ( "repos-motrice-cab.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+			Stream (
+				Priority ( 6 )
+				Triggers ( 2
+					Variable_Trigger ( Variable3_Inc_Past 0.07  StartLoopRelease   ( 1 File ( "vt-fr-rh_cab.wav" -1 )   SelectionMethod ( SequentialSelection ) ) )
+					Variable_Trigger ( Variable3_Dec_Past 0.07  ReleaseLoopRelease  () )
+					
+					
+				)
+				
+				VolumeCurve(
+					SpeedControlled
+					CurvePoints ( 5
+						 -167.0		1.0
+						  -6.0		1.0
+						   0.0		0.0
+						   6.0		1.0
+						 167.0		1.0
+					)
+					Granularity ( 0.05 )
+				)			
+
+			)
+            Stream (
+                Skip ( ** Commandes Freins ** )
+                Priority ( 6 )
+                Volume ( 0.6 )
+                Triggers ( 5
+                    skip ( * Action frein de train ** )
+                    Discrete_Trigger ( 14
+                        PlayOneShot ( 1
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    skip ( * Action frein de loc ** )
+                    Discrete_Trigger ( 18
+                        PlayOneShot ( 2
+                            File ( "acela_econtrol2.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    skip ( * Application frein de loc ** )
+                    Discrete_Trigger ( 22
+                        PlayOneShot ( 2
+                            File ( "dupl-freinEP.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    skip ( * Application frein de train ** )
+                    Discrete_Trigger ( 53
+                        PlayOneShot ( 2
+                            File ( "dupl-freinEP.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                    skip ( * Application frein d'urgence ** )
+                    Discrete_Trigger ( 54
+                        PlayOneShot ( 2
+                            File ( "dupl-freinEP.wav" -1 )
+                            File ( "dupl-freinEP.wav" -1 )
+                            SelectionMethod ( RandomSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Déverrouillage Boîte à leviers **** )
+                Priority ( 6 )
+                Triggers ( 1
+                    Discrete_Trigger ( 10
+                        PlayOneShot ( 1
+                            File ( "BL.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( ** VACMA ** )
+                Priority ( 6 )
+                Triggers ( 4
+                    Discrete_Trigger ( 56
+                        SetStreamVolume ( 1.0 )
+                    )
+                    Discrete_Trigger ( 56
+                        StartLoopRelease ( 1
+                            File ( "vacma.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 57
+                        SetStreamVolume ( 0.0 )
+                    )
+                    Discrete_Trigger ( 57
+                        ReleaseLoopRelease ( )
+                    )
+                )
+            )
+            Skip ( ** Sanor ** )
+            Stream (
+                Priority ( 6 )
+                Triggers ( 4
+                    Discrete_Trigger ( 8
+                        SetStreamVolume ( 0.5 )
+                    )
+                    Discrete_Trigger ( 8
+                        StartLoopRelease ( 2
+                            File ( "ton1.wav" -1 )
+                            File ( "ton2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 9
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+					Discrete_Trigger ( 9
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** trappes attelages **** )
+                Priority ( 4 )
+                Triggers ( 4
+                    Discrete_Trigger ( 108
+                        SetStreamVolume ( 0.5 )
+                    )
+                    Discrete_Trigger ( 108
+                        PlayOneShot ( 1
+                            File ( "o-tr-at.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 107
+                        SetStreamVolume ( 0.5 )
+                    )
+                    Discrete_Trigger ( 107
+                        PlayOneShot ( 1
+                            File ( "f-tr-at.WAV" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Ventilation BM **** )
+                Priority ( 6 )
+                Triggers ( 2
+                    Variable_Trigger (
+                        Variable2_Inc_Past 1.0
+                        StartLoopRelease ( 1
+                            File ( "XX_VentilSE.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 1.0
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                )
+                FrequencyCurve (
+                    Variable2Controlled
+                    CurvePoints ( 4
+                        0.000 6000
+                        10.000 10000
+                        50.000 11025
+                        100.000 11025
+                    )
+                    Granularity ( 1 )
+                )
+                VolumeCurve (
+                    Variable2Controlled
+                    CurvePoints ( 2
+                        0.000 0.6
+                        0.600 0.6
+                    )
+                    Granularity ( 0.05 )
+                )
+            )			
+			Stream (
+                Skip ( **** Commandes disjoncteurs **** )
+                Priority ( 4 )
+                Triggers ( 4
+					Discrete_Trigger ( 153
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 154
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+					Discrete_Trigger ( 157
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 158
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Moteurs de traction Marche **** )
+                Priority ( 5 )
+                Triggers ( 5
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        SetStreamVolume ( 0.4 )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        PlayOneShot ( 1
+                            File ( "MT-1DOM.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Inc_Past 0.07
+                        StartLoopRelease ( 1
+                            File ( "MT-2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        ReleaseLoopReleaseWithJump ( )
+                    )
+                    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        SetStreamVolume ( 0.0 )
+                    )
+                )
+            )
+            Stream (
+                Skip ( **** Moteurs de traction Arret **** )
+                Priority ( 5 )
+                Triggers ( 2
+
+					    Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        SetStreamVolume ( 0.4 )
+                    )
+						Variable_Trigger (
+                        Variable2_Dec_Past 0.07
+                        PlayOneShot ( 1
+                            File ( "MT-3.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+                       Stream (
+                Skip ( ** Bruits manipulateur ** )
+                Priority ( 5 )
+                Volume ( 1.0 )
+                Triggers ( 9
+					Discrete_Trigger ( 5
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 6
+                        PlayOneShot ( 1
+                            File ( "BP-ZDJ.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )				
+                    Discrete_Trigger ( 15
+                        PlayOneShot ( 1
+                            File ( "acela_reverserf.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 16
+                        PlayOneShot ( 1
+                            File ( "acela_reverserf" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 26
+                        PlayOneShot ( 1
+                            File ( "acela_econtrol2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 37
+                        PlayOneShot ( 1
+                            File ( "acela_flightsf.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 47
+                        PlayOneShot ( 1
+                            File ( "acela_pantot.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 48
+                        PlayOneShot ( 1
+                            File ( "acela_econtrol2.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                    Discrete_Trigger ( 51
+                        PlayOneShot ( 1
+                            File ( "acela_ebrake.wav" -1 )
+                            SelectionMethod ( SequentialSelection )
+                        )
+                    )
+                )
+            )
+        )
+    )
+) 
