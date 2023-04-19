@@ -1,0 +1,45 @@
+SIMISA@@@@@@@@@@JINX0D0t______
+
+Wagon ( TGVR240340-Lacroix
+
+
+	comment(-------- Nom et formes --------)
+
+	Type ( Carriage )
+	WagonShape ( TGVR240340-Lacroix.s )
+	Freightanim 	( Tsk_TGVRemBout.s 1 1 )
+
+	comment(-------- Caracteristiques generales --------)
+
+	Include( Remorques\\WagonMechanicalCharacteristics_Rem-Ext.inc )
+
+	Comment(-------- Capacité d'emport --------)
+	PassengerCapacity ( 68.0 )
+
+	comment(-------- Organes de choc et d'attelage --------)
+
+	Include( Remorques\\Couplings_Rem-Ext.inc )
+	
+	Include( Remorques\\Buffers.inc )
+
+
+   	comment(-------- Freinage --------)
+
+	Include( Remorques\\WagonBrakeSystem.inc )
+
+
+    comment(-------- Script batterie --------)
+
+	Include( Remorques\\Battery.inc )
+
+
+	comment(-------- Ligne chauffage train --------)
+
+	Include( Remorques\\chauffage-train.inc )
+	
+	
+	comment(-------- Sons --------)
+
+	Sound ( "TGVRwag.sms" )
+
+)

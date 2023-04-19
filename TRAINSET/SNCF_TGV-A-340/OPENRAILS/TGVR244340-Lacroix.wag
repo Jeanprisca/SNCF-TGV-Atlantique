@@ -1,0 +1,28 @@
+
+include ( "..\\TGVR244340-Lacroix.wag" )
+
+Wagon (
+	ORTSFreightAnims
+	(
+        MSTSFreightAnimEnabled ( 1 )
+        WagonEmptyWeight( 30.0t )
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "TSK_COSE-R4.s" )
+			Offset( 0, 0, 0 )
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "Man4.s" )
+			Offset( 0.33, -2.0, 5.0)
+		)
+		FreightAnimStatic
+		(
+			SubType( Default )
+			Shape( "FGirlsD1.s" )
+			Offset( 0, 0.08, 5.0 )
+		)
+	)
+)
