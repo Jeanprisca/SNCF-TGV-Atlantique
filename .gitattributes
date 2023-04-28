@@ -9,3 +9,4 @@
 *.tga binary
 *.wag text working-tree-encoding=UTF-16LE-BOM eol=CRLF
 *.wav binary
+*.exe filter=lfs diff=lfs merge=lfs -text
